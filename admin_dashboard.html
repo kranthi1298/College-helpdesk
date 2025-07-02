@@ -815,7 +815,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            if (!isAdminAuthenticated()) {
+            if (isAdminAuthenticated()) {
                 window.location.href = 'admin_login.html';
                 return;
             }
